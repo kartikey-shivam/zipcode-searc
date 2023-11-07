@@ -1,0 +1,85 @@
+.zipcode_input {
+    /* line up zipcode input box with the heading above it */
+    margin-left: 200px;
+    margin-top: 12px;
+}
+
+.p_info {
+    /* line up zipcode not providing info error with text above it */
+    margin-left: 131px;
+    padding-top: 15px;
+    font-weight: bold;
+    animation:blinkingText 1.2s infinite;
+} /* Cool blinking text ;) */
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: red; }
+    99%{    color: red;  }
+    100%{   color: white;    }
+}
+
+.locationInfo h1 {
+    color: mediumslateblue;
+    text-transform: uppercase;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
+.locationInfo ul {
+    /* Add a cool border around the zipcode information */
+    border: solid white 1px;
+    width: 100%;
+    padding: 15px;
+    margin-left: 22px;
+}
+
+.locationInfo ul li {
+    /* Get rid of ugly bullet points */
+    list-style-type: none;
+}
+.cardCon{
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr));
+    gap: 1rem;
+  }
+  
+  .clickable-card {
+    font-family: ui-system, sans-serif;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .clickable-card a,
+  .clickable-card button {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .clickable-card h5 a {
+    position: static;
+    color: mediumslateblue;
+  }
+  
+  .clickable-card h5 a::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+  }
+  
+  .box{
+    width: 33%;
+    height: 30vh;
+    background-color: green;
+  }
